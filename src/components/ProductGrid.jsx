@@ -36,8 +36,9 @@ export default function ProductGrid({ products, addToCart }) {
                 target="_blank"
                 rel="noreferrer"
                 className="order-btn"
+                aria-label={`Order ${item.name} via WhatsApp`}
               >
-                WA
+                WhatsApp
               </a>
             </div>
           </div>

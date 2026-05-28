@@ -534,13 +534,33 @@ img {
 }
 
 .card-bottom {
+  display: grid;
+  gap: 12px;
   padding: 16px;
 }
 
 .ghost-btn {
-  min-width: 104px;
+  min-width: 0;
   padding: 0 12px;
   font-size: 12px;
+}
+
+.card .card-actions {
+  width: 100%;
+  align-items: stretch;
+}
+
+.card .ghost-btn,
+.card .order-btn {
+  flex: 1;
+  min-height: 40px;
+  font-size: 12px;
+}
+
+.card .order-btn {
+  border-color: #1f9d55;
+  background: #1f9d55;
+  box-shadow: 0 10px 20px rgba(31, 157, 85, 0.16);
 }
 
 .empty-state {
@@ -801,7 +821,6 @@ img {
   }
 
   .hero-actions,
-  .card-bottom,
   .card-actions {
     align-items: stretch;
     flex-direction: column;
